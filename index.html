@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Geek </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/trans_bg.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="header__title">
+        <h1>AluraGeek</h1>
+        <button
+          class="header__dark-mode"
+          id="dark-mode-toggle"
+          aria-label="Toggle Dark Mode"
+        >
+          <i class="fa-solid fa-moon moon-color" title="Modo oscuro"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="main__container">
+      <section class="form">
+        <h2 class="form__heading">AGREGAR PRODUCTO:</h2>
+        <form id="product-form">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="product-name"
+            name="nombre"
+            placeholder="nombre del producto..."
+            required
+            maxlength="30"
+          />
+          <br />
+          <label for="precio">Precio:</label>
+          <input
+            type="text"
+            id="product-price"
+            name="precio"
+            placeholder="precio del producto..."
+            required
+            maxlength="6"
+            oninput="this.value = this.value.replace(/[^0-9.,]/g, '').slice(0, 6)"
+          />
+          <br />
+          <label for="imagen">Imagen:</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="product-image"
+              name="imagen"
+              placeholder="url de la imagen o seleccionar..."
+              required
+            />
+            <i class="fa-solid fa-folder file-icon" id="file-picker-icon"></i>
+            <input
+              type="file"
+              id="file-picker"
+              accept="image/*"
+              style="display: none;"
+            />
+          </div>
+          <br />
+          <div class="form__buttons">
+            <button class="form__button form__button--submit" type="submit" onclick="ClearFormInputs();">
+              Enviar
+            </button>
+            <button class="form__button form__button--reset" type="reset" id="reset-button">
+              Limpiar
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="products">
+        <h2 class="products__heading">MIS PRODUCTOS:</h2>
+        <ul class="products__list">
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__banner">
+        <div class="footer__banner-title">
+          <h2>AluraGeek</h2>
+        </div>
+        <p>Desarrolado por Alexis Mansilla</p>
+        <h4>ALURA LATAM - 2024</h4>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/63b63f7197.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
+
