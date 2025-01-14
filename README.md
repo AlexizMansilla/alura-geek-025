@@ -16,3 +16,30 @@ AluraGeek es un proyecto creado para el curso **Alura | ONE**. Es una aplicació
 - **CSS3**: Estilos y diseño (usando Flexbox).
 - **JavaScript**: Interactividad, manipulación del DOM y manejo de formularios.
 - **json-server**: Herramienta para simular un back-end y manejar el almacenamiento de productos,
+
+## Configuración de Lanzamiento
+
+```json
+{
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/${input:programPath}",
+      "preLaunchTask": "npm: run"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "programPath",
+      "description": "Select the entry point for your application",
+      "options": [
+        "js/api.js",
+        "js/dom.js",
+        "js/main.js"
+      ]
+    }
+  ]
+}
