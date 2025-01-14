@@ -23,6 +23,18 @@
       "name": "Dmc Delorean",
       "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.carscoops.com%2Fwp-content%2Fuploads%2F2020%2F11%2F2020-DeLorean-Renders.jpg&f=1&nofb=1&ipt=743361fd2deb0bcbe53d686b326245f7c20a66e4198782c98cbacb14ec8a67a0&ipo=images",
       "price": "984565"
+    },
+    {
+      "id": "404a",
+      "name": "Lamborghini ",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.24net.cz%2F5%2Fobrazek%2Flamborghini-revuelto-65591&f=1&nofb=1&ipt=0329004ef9279004a1421b78c11559998ca9e429c2cdd2779681ec18458f16eb&ipo=images",
+      "price": "699999"
+    },
+    {
+      "id": "bc8c",
+      "name": "Tesla Cybertruck",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hibridosyelectricos.com%2Fuploads%2Fs1%2F77%2F37%2F25%2Ftesla-cybertruck.jpeg&f=1&nofb=1&ipt=be57fe9c6b67a2fcaba7d59ea7b6964d36eea354f349be41233e35cb3feb1358&ipo=images",
+      "price": "666544"
     }
   ]
 }
